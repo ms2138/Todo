@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C3E8CE02457FFFA008B8860 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E8CDF2457FFFA008B8860 /* CoreDataManager.swift */; };
 		84B3854E2457F95100B7BE7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3854D2457F95100B7BE7D /* AppDelegate.swift */; };
 		84B385502457F95100B7BE7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3854F2457F95100B7BE7D /* SceneDelegate.swift */; };
 		84B385522457F95100B7BE7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B385512457F95100B7BE7D /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C3E8CDF2457FFFA008B8860 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		84B3854A2457F95100B7BE7D /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B3854D2457F95100B7BE7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B3854F2457F95100B7BE7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				84B3854D2457F95100B7BE7D /* AppDelegate.swift */,
 				84B3854F2457F95100B7BE7D /* SceneDelegate.swift */,
 				84B385512457F95100B7BE7D /* ViewController.swift */,
+				3C3E8CDF2457FFFA008B8860 /* CoreDataManager.swift */,
 				84B385532457F95100B7BE7D /* Main.storyboard */,
 				84B385592457F95300B7BE7D /* Assets.xcassets */,
 				84B3855B2457F95300B7BE7D /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				84B385522457F95100B7BE7D /* ViewController.swift in Sources */,
 				84B3854E2457F95100B7BE7D /* AppDelegate.swift in Sources */,
 				84B385502457F95100B7BE7D /* SceneDelegate.swift in Sources */,
+				3C3E8CE02457FFFA008B8860 /* CoreDataManager.swift in Sources */,
 				84B385582457F95100B7BE7D /* Todo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
