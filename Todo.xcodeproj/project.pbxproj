@@ -57,6 +57,15 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		3C3E8CE3245801E3008B8860 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84B385532457F95100B7BE7D /* Main.storyboard */,
+				84B3855B2457F95300B7BE7D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		84B385412457F95100B7BE7D = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +89,8 @@
 				84B3854F2457F95100B7BE7D /* SceneDelegate.swift */,
 				3C3E8CE22458011C008B8860 /* View Controllers */,
 				3C3E8CE1245800B5008B8860 /* Core Data */,
-				84B385532457F95100B7BE7D /* Main.storyboard */,
+				3C3E8CE3245801E3008B8860 /* Storyboards */,
 				84B385592457F95300B7BE7D /* Assets.xcassets */,
-				84B3855B2457F95300B7BE7D /* LaunchScreen.storyboard */,
 				84B3855E2457F95300B7BE7D /* Info.plist */,
 				84B385562457F95100B7BE7D /* Todo.xcdatamodeld */,
 			);
