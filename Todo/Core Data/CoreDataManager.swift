@@ -20,7 +20,10 @@ class CoreDataManager {
         })
         return container
     }()
-    
+    lazy var managedObjectContext: NSManagedObjectContext = {
+        return self.persistentContainer.viewContext
+    }()
+
     init(modelName: String) {
         self.modelName = modelName
     }
