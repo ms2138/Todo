@@ -13,6 +13,7 @@ class CoreDataManager {
     let modelName: String
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: self.modelName)
+        container.viewContext.automaticallyMergesChangesFromParent = true
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error {
                 fatalError("Unresolved error \(error)")
@@ -26,5 +27,17 @@ class CoreDataManager {
 
     init(modelName: String) {
         self.modelName = modelName
+    }
+}
+
+extension CoreDataManager {
+    func saveContext () {
+        if managedObjectContext.hasChanges {
+            do {
+                try managedObjectContext.save()
+            } catch {
+                print("Failed to save changes. \(error), \(error.localizedDescription)")
+            }
+        }
     }
 }
