@@ -11,6 +11,15 @@ import CoreData
 
 class CoreDataManager {
     let modelName: String
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: self.modelName)
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error {
+                fatalError("Unresolved error \(error)")
+            }
+        })
+        return container
+    }()
     
     init(modelName: String) {
         self.modelName = modelName
