@@ -9,6 +9,8 @@
 import UIKit
 
 class TodoViewController: UIViewController {
+    private let reuseIdentifier = "TodoItemCell"
+
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
