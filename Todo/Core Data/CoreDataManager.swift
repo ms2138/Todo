@@ -10,4 +10,9 @@ import Foundation
 import CoreData
 
 class CoreDataManager {
+    let modelName: String
+    
+    init(modelName: String) {
+        self.modelName = modelName
+    }
 }
