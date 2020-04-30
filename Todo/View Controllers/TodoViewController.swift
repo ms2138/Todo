@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class TodoViewController: UIViewController {
     private let reuseIdentifier = "TodoItemCell"
 
     @IBOutlet weak var tableView: UITableView!
-    
+    let dataManager = CoreDataManager(modelName: "ToDo")
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
