@@ -14,6 +14,9 @@ class TodoViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     let dataManager = CoreDataManager(modelName: "ToDo")
+    lazy var managedObjectContext: NSManagedObjectContext = {
+        return self.dataManager.managedObjectContext
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
