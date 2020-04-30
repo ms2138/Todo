@@ -3,7 +3,7 @@
 //  Todo
 //
 //  Created by mani on 2020-04-29.
-//  Copyright © 2020 home. All rights reserved.
+//  Copyright © 2020 mani. All rights reserved.
 //
 //
 
