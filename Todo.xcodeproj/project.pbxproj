@@ -10,6 +10,8 @@
 		3C3E8CE02457FFFA008B8860 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E8CDF2457FFFA008B8860 /* CoreDataManager.swift */; };
 		3C3E8CE6245A9E03008B8860 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E8CE4245A9E03008B8860 /* Item+CoreDataClass.swift */; };
 		3C3E8CE7245A9E03008B8860 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E8CE5245A9E03008B8860 /* Item+CoreDataProperties.swift */; };
+		3C3E8CEB245E298B008B8860 /* NoContentBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E8CEA245E298B008B8860 /* NoContentBackgroundView.swift */; };
+		3C3E8CED245E29C3008B8860 /* DTTableBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E8CEC245E29C3008B8860 /* DTTableBackgroundView.swift */; };
 		84B3854E2457F95100B7BE7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3854D2457F95100B7BE7D /* AppDelegate.swift */; };
 		84B385502457F95100B7BE7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3854F2457F95100B7BE7D /* SceneDelegate.swift */; };
 		84B385522457F95100B7BE7D /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B385512457F95100B7BE7D /* TodoViewController.swift */; };
@@ -23,6 +25,8 @@
 		3C3E8CDF2457FFFA008B8860 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		3C3E8CE4245A9E03008B8860 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3C3E8CE5245A9E03008B8860 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3C3E8CEA245E298B008B8860 /* NoContentBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoContentBackgroundView.swift; sourceTree = "<group>"; };
+		3C3E8CEC245E29C3008B8860 /* DTTableBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTableBackgroundView.swift; sourceTree = "<group>"; };
 		84B3854A2457F95100B7BE7D /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B3854D2457F95100B7BE7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B3854F2457F95100B7BE7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 		84B3854C2457F95100B7BE7D /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				3C3E8CEA245E298B008B8860 /* NoContentBackgroundView.swift */,
+				3C3E8CEC245E29C3008B8860 /* DTTableBackgroundView.swift */,
 				3C3E8CE8245A9E41008B8860 /* Models */,
 				3C3E8CE9245E257E008B8860 /* Delegates */,
 				3C3E8CE22458011C008B8860 /* View Controllers */,
@@ -192,7 +198,9 @@
 			files = (
 				3C3E8CE7245A9E03008B8860 /* Item+CoreDataProperties.swift in Sources */,
 				3C3E8CE6245A9E03008B8860 /* Item+CoreDataClass.swift in Sources */,
+				3C3E8CED245E29C3008B8860 /* DTTableBackgroundView.swift in Sources */,
 				84B385522457F95100B7BE7D /* TodoViewController.swift in Sources */,
+				3C3E8CEB245E298B008B8860 /* NoContentBackgroundView.swift in Sources */,
 				84B3854E2457F95100B7BE7D /* AppDelegate.swift in Sources */,
 				84B385502457F95100B7BE7D /* SceneDelegate.swift in Sources */,
 				3C3E8CE02457FFFA008B8860 /* CoreDataManager.swift in Sources */,
