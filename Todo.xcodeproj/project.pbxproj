@@ -92,6 +92,14 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+		3C3E8CEE245E2A54008B8860 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C3E8CEC245E29C3008B8860 /* DTTableBackgroundView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		84B385412457F95100B7BE7D = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				3C3E8CEA245E298B008B8860 /* NoContentBackgroundView.swift */,
-				3C3E8CEC245E29C3008B8860 /* DTTableBackgroundView.swift */,
+				3C3E8CEE245E2A54008B8860 /* Views */,
 				3C3E8CE8245A9E41008B8860 /* Models */,
 				3C3E8CE9245E257E008B8860 /* Delegates */,
 				3C3E8CE22458011C008B8860 /* View Controllers */,
