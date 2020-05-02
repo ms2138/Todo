@@ -35,6 +35,20 @@ class TodoViewController: UIViewController {
 
 }
 
+extension TodoViewController {
+    @objc func save() {
+        dataManager.saveContext()
+    }
+
+    private func fetchItems() {
+        do {
+            try self.fetchedResultsController.performFetch()
+        } catch {
+            print("Failed to fetch items: \(error)")
+        }
+    }
+}
+
 extension TodoViewController: NSFetchedResultsControllerDelegate {
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
