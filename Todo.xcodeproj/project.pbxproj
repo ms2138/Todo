@@ -100,6 +100,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		3C3E8CEF245E2AF9008B8860 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3C3E8CEA245E298B008B8860 /* NoContentBackgroundView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		84B385412457F95100B7BE7D = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +127,7 @@
 		84B3854C2457F95100B7BE7D /* Todo */ = {
 			isa = PBXGroup;
 			children = (
-				3C3E8CEA245E298B008B8860 /* NoContentBackgroundView.swift */,
+				3C3E8CEF245E2AF9008B8860 /* Protocols */,
 				3C3E8CEE245E2A54008B8860 /* Views */,
 				3C3E8CE8245A9E41008B8860 /* Models */,
 				3C3E8CE9245E257E008B8860 /* Delegates */,
