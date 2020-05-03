@@ -48,6 +48,8 @@ class TodoViewController: UIViewController, NoContentBackgroundView {
 }
 
 extension TodoViewController {
+    // MARK: Core Data management methods
+
     @objc func save() {
         dataManager.saveContext()
     }
@@ -61,7 +63,37 @@ extension TodoViewController {
     }
 }
 
+extension TodoViewController: UITableViewDataSource {
+    // MARK: Table View data source methods
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        guard let sections = fetchedResultsController.sections else { return 0 }
+        return sections.count
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let sections = fetchedResultsController.sections else { return 0 }
+
+        let sectionInfo = sections[section]
+        if sectionInfo.numberOfObjects == 0 {
+            showBackgroundView()
+            return 0
+        }
+
+        hideBackgroundView()
+        return sectionInfo.numberOfObjects
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+
+        return cell
+    }
+}
+
 extension TodoViewController: NSFetchedResultsControllerDelegate {
+    // MARK: NSFetchedResultsController delegate methods
+
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }
