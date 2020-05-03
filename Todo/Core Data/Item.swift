@@ -9,5 +9,9 @@
 import Foundation
 
 extension Item {
-
+    func createdAtString(dateFormat: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = dateFormat
+        return dateFormatter.string(from: createdAt)
+    }
 }
