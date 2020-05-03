@@ -38,6 +38,7 @@
                         <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="save" id="un1-7h-Kbc"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="nameCell" destination="iuU-1u-rnI" id="Z3O-Oa-YW3"/>
                         <outlet property="saveBarButtonItem" destination="un1-7h-Kbc" id="MfB-K0-sCG"/>
                     </connections>
                 </tableViewController>
