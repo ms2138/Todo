@@ -30,6 +30,34 @@ class AddTodoViewController: UITableViewController {
 }
 
 extension AddTodoViewController {
+    // MARK: - IBAction methods
+
+    @IBAction func cancel(_ sender: UIBarButtonItem?) {
+        dismiss(animated: true)
+    }
+
+    @IBAction func save(_ sender: UIBarButtonItem?) {
+        guard let managedObjectContext = managedObjectContext else { return }
+        guard let name = nameCell.textField.text, !name.isEmpty else {
+            showAlert(title: "Error", message: "Please enter the required information")
+            return
+        }
+
+        let entity = NSEntityDescription.entity(forEntityName: "Item",
+                                                in: managedObjectContext)!
+
+        let item = Item(entity: entity,
+                        insertInto: managedObjectContext)
+
+        item.name = name
+        item.createdAt = Date()
+        item.finished = false
+
+        dismiss(animated: true)
+    }
+}
+
+extension AddTodoViewController {
     // MARK: - View setup methods
 
     private func setupTextInputCell() {
