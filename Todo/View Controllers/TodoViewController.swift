@@ -91,6 +91,8 @@ extension TodoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
 
+         configureCell(cell, at: indexPath)
+
         return cell
     }
 
@@ -104,6 +106,21 @@ extension TodoViewController: UITableViewDataSource {
         let item = fetchedResultsController.object(at: indexPath)
 
         managedObjectContext.delete(item)
+    }
+}
+
+extension TodoViewController {
+    func configureCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
+        let item = fetchedResultsController.object(at: indexPath)
+        cell.textLabel?.text = item.name
+        cell.detailTextLabel?.text = item.createdAtString(dateFormat: "MMM d, h:mm a")
+        if item.finished == true {
+            cell.backgroundColor = UIColor(hex: "ededed")
+            cell.accessoryType = .checkmark
+        } else {
+            cell.backgroundColor = .white
+            cell.accessoryType = .none
+        }
     }
 }
 
