@@ -34,8 +34,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="3KV-kf-zst">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="2jD-aG-1e3"/>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="save" id="un1-7h-Kbc"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="2jD-aG-1e3">
+                            <connections>
+                                <action selector="cancel:" destination="BZb-SA-A6F" id="DNc-iX-F3i"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="save" id="un1-7h-Kbc">
+                            <connections>
+                                <action selector="save:" destination="BZb-SA-A6F" id="yLN-fe-zSm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameCell" destination="iuU-1u-rnI" id="Z3O-Oa-YW3"/>
