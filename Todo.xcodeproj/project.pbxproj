@@ -13,6 +13,7 @@
 		3C3E8CEB245E298B008B8860 /* NoContentBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E8CEA245E298B008B8860 /* NoContentBackgroundView.swift */; };
 		3C3E8CED245E29C3008B8860 /* DTTableBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E8CEC245E29C3008B8860 /* DTTableBackgroundView.swift */; };
 		3C3E8CF1245E5CAE008B8860 /* UIColor+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E8CF0245E5CAE008B8860 /* UIColor+EXT.swift */; };
+		3C3E8CF3245E65E3008B8860 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E8CF2245E65E3008B8860 /* AddTodoViewController.swift */; };
 		84B3854E2457F95100B7BE7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3854D2457F95100B7BE7D /* AppDelegate.swift */; };
 		84B385502457F95100B7BE7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3854F2457F95100B7BE7D /* SceneDelegate.swift */; };
 		84B385522457F95100B7BE7D /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B385512457F95100B7BE7D /* TodoViewController.swift */; };
@@ -29,6 +30,7 @@
 		3C3E8CEA245E298B008B8860 /* NoContentBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoContentBackgroundView.swift; sourceTree = "<group>"; };
 		3C3E8CEC245E29C3008B8860 /* DTTableBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTableBackgroundView.swift; sourceTree = "<group>"; };
 		3C3E8CF0245E5CAE008B8860 /* UIColor+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+EXT.swift"; sourceTree = "<group>"; };
+		3C3E8CF2245E65E3008B8860 /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
 		84B3854A2457F95100B7BE7D /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B3854D2457F95100B7BE7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B3854F2457F95100B7BE7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				84B385512457F95100B7BE7D /* TodoViewController.swift */,
+				3C3E8CF2245E65E3008B8860 /* AddTodoViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				3C3E8CED245E29C3008B8860 /* DTTableBackgroundView.swift in Sources */,
 				3C3E8CF1245E5CAE008B8860 /* UIColor+EXT.swift in Sources */,
 				84B385522457F95100B7BE7D /* TodoViewController.swift in Sources */,
+				3C3E8CF3245E65E3008B8860 /* AddTodoViewController.swift in Sources */,
 				3C3E8CEB245E298B008B8860 /* NoContentBackgroundView.swift in Sources */,
 				84B3854E2457F95100B7BE7D /* AppDelegate.swift in Sources */,
 				84B385502457F95100B7BE7D /* SceneDelegate.swift in Sources */,
