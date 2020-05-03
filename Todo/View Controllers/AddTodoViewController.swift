@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
-class AddTodoViewController: UIViewController {
-
+class AddTodoViewController: UITableViewController {
+    var managedObjectContext: NSManagedObjectContext?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
