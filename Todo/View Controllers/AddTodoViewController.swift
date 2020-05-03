@@ -73,5 +73,14 @@ extension AddTodoViewController {
 }
 
 extension AddTodoViewController: UITextFieldDelegate {
+    // MARK: - Text field delegate methods
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField.returnKeyType == .done {
+            textField.resignFirstResponder()
+            save(nil)
+            return true
+        }
+        return false
+    }
 }
