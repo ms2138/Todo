@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TodoViewController: UIViewController {
+class TodoViewController: UIViewController, NoContentBackgroundView {
     private let reuseIdentifier = "TodoItemCell"
 
     @IBOutlet weak var tableView: UITableView!
@@ -28,9 +28,21 @@ class TodoViewController: UIViewController {
         fetchedResultsController.delegate = self
         return fetchedResultsController
     }()
+    lazy var backgroundView: DTTableBackgroundView = {
+        let backgroundView = DTTableBackgroundView(frame: self.view.frame)
+        backgroundView.messageLabel.text = "Please add a todo"
+        backgroundView.buttonTitle = "Add Todo"
+        backgroundView.handler = {
+            self.performSegue(withIdentifier: "showAddTodo", sender: nil)
+        }
+        return backgroundView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        tableView.backgroundView = backgroundView
+        hideBackgroundView()
     }
 
 }
