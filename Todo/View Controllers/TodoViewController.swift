@@ -41,6 +41,10 @@ class TodoViewController: UIViewController, NoContentBackgroundView {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Todo"
+
+        fetchItems()
+
         tableView.backgroundView = backgroundView
         hideBackgroundView()
     }
