@@ -47,8 +47,25 @@ class TodoViewController: UIViewController, NoContentBackgroundView {
 
         tableView.backgroundView = backgroundView
         hideBackgroundView()
+
+        setupNotifications()
     }
 
+}
+
+extension TodoViewController {
+    // MARK: Notification methods
+    
+    private func setupNotifications() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(save),
+                                               name: UIApplication.willTerminateNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(save),
+                                               name: UIApplication.didEnterBackgroundNotification,
+                                               object: nil)
+    }
 }
 
 extension TodoViewController {
