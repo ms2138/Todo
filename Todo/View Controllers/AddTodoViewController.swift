@@ -10,7 +10,9 @@ import UIKit
 import CoreData
 
 class AddTodoViewController: UITableViewController {
+    @IBOutlet weak var nameCell: TextInputCell!
     var managedObjectContext: NSManagedObjectContext?
+    @IBOutlet weak var saveBarButtonItem: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()

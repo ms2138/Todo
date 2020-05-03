@@ -29,7 +29,13 @@
                             <outlet property="delegate" destination="BZb-SA-A6F" id="00d-mE-jT0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3KV-kf-zst"/>
+                    <navigationItem key="navigationItem" id="3KV-kf-zst">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="2jD-aG-1e3"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="save" id="un1-7h-Kbc"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="saveBarButtonItem" destination="un1-7h-Kbc" id="MfB-K0-sCG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOG-tH-9Nx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
