@@ -19,4 +19,31 @@ class AddTodoViewController: UITableViewController {
 
         title = "Add Todo"
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        setupTextInputCell()
+
+        nameCell.textField.becomeFirstResponder()
+    }
+}
+
+extension AddTodoViewController {
+    // MARK: - View setup methods
+
+    private func setupTextInputCell() {
+        nameCell.textField.delegate = self
+        nameCell.textField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+        nameCell.textField.autocapitalizationType = .none
+        nameCell.textField.returnKeyType = .done
+    }
+
+    @objc func textDidChange(sender: UITextField) {
+        saveBarButtonItem.isEnabled = !nameCell.textField.text!.isEmpty
+    }
+}
+
+extension AddTodoViewController: UITextFieldDelegate {
+
 }
