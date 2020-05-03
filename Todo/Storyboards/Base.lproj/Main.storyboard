@@ -62,7 +62,7 @@
                     <navigationItem key="navigationItem" id="In1-Wy-OBm">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hWQ-Dz-1Nf">
                             <connections>
-                                <segue destination="jPH-qi-eSJ" kind="presentation" id="dnh-7B-7RJ"/>
+                                <segue destination="jPH-qi-eSJ" kind="presentation" identifier="showAddTodo" id="dnh-7B-7RJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
