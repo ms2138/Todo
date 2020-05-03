@@ -13,7 +13,7 @@ class TodoViewController: UIViewController, NoContentBackgroundView {
     private let reuseIdentifier = "TodoItemCell"
 
     @IBOutlet weak var tableView: UITableView!
-    let dataManager = CoreDataManager(modelName: "ToDo")
+    let dataManager = CoreDataManager(modelName: "Todo")
     lazy var managedObjectContext: NSManagedObjectContext = {
         return self.dataManager.managedObjectContext
     }()
