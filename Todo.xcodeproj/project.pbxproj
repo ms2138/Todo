@@ -115,7 +115,6 @@
 		3C3E8CEF245E2AF9008B8860 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				3C3E8CF0245E5CAE008B8860 /* UIColor+EXT.swift */,
 				3C3E8CEA245E298B008B8860 /* NoContentBackgroundView.swift */,
 			);
 			path = Protocols;
@@ -127,6 +126,15 @@
 				3C3E8CF6245E727D008B8860 /* TextInputCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		3C3E8CFB245E768D008B8860 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C3E8CF0245E5CAE008B8860 /* UIColor+EXT.swift */,
+				3C3E8CF9245E7649008B8860 /* UIViewController+EXT.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		84B385412457F95100B7BE7D = {
@@ -148,7 +156,7 @@
 		84B3854C2457F95100B7BE7D /* Todo */ = {
 			isa = PBXGroup;
 			children = (
-				3C3E8CF9245E7649008B8860 /* UIViewController+EXT.swift */,
+				3C3E8CFB245E768D008B8860 /* Extensions */,
 				3C3E8CF8245E72AB008B8860 /* Cells */,
 				3C3E8CEF245E2AF9008B8860 /* Protocols */,
 				3C3E8CEE245E2A54008B8860 /* Views */,
