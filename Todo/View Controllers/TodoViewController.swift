@@ -137,3 +137,19 @@ extension TodoViewController: NSFetchedResultsControllerDelegate {
         }
     }
 }
+
+extension TodoViewController {
+    // MARK: - Segue methods
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+            case "showAddTodo":
+                let navController = segue.destination as! UINavigationController
+                guard let viewController = navController.topViewController else { return }
+                let vc = viewController as! AddTodoViewController
+                vc.managedObjectContext = self.managedObjectContext
+            default:
+                preconditionFailure("Segue identifier did not match")
+        }
+    }
+}
