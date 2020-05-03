@@ -109,6 +109,18 @@ extension TodoViewController: UITableViewDataSource {
     }
 }
 
+extension TodoViewController: UITableViewDelegate {
+    // MARK: Table View delegate methods
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = self.fetchedResultsController.object(at: indexPath)
+
+        item.finished = !item.finished
+
+        tableView.reloadRows(at: [indexPath], with: .fade)
+    }
+}
+
 extension TodoViewController {
     func configureCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
         let item = fetchedResultsController.object(at: indexPath)
