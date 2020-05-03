@@ -16,5 +16,7 @@ class AddTodoViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        title = "Add Todo"
     }
 }
