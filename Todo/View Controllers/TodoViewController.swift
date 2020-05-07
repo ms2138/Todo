@@ -45,12 +45,28 @@ class TodoViewController: UIViewController, NoContentBackgroundView {
 
         fetchItems()
 
+        managedObjectContext.undoManager = UndoManager()
+
         tableView.backgroundView = backgroundView
         hideBackgroundView()
 
         setupNotifications()
     }
 
+}
+
+extension TodoViewController {
+    // MARK: Motion event methods
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            if let undoManager = managedObjectContext.undoManager {
+                if undoManager.canUndo {
+                    undoManager.undo()
+                }
+            }
+        }
+    }
 }
 
 extension TodoViewController {
